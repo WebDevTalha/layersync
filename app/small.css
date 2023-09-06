@@ -1,0 +1,35 @@
+.spinner-small {
+     width: 40px;
+     height: 40px;
+     display: grid;
+     border: 3.2px solid #0000;
+     border-radius: 50%;
+     border-color: #dbdcef #0000;
+     animation: spinner-small-e04l1k 1s infinite linear;
+  }
+  
+  .spinner-small::before,
+  .spinner-small::after {
+     content: "";
+     grid-area: 1/1;
+     margin: 1.6px;
+     border: inherit;
+     border-radius: 50%;
+  }
+  
+  .spinner-small::before {
+     border-color: #ffaef4 #0000;
+     animation: inherit;
+     animation-duration: 0.5s;
+     animation-direction: reverse;
+  }
+  
+  .spinner-small::after {
+     margin: 6.4px;
+  }
+  
+  @keyframes spinner-small-e04l1k {
+     100% {
+        transform: rotate(1turn);
+     }
+  }
